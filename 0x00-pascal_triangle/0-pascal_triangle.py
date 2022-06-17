@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """Defines a function pascal_triangle that
 returns a representation of the Pascal's triangle
 """
