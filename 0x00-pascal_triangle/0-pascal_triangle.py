@@ -15,3 +15,13 @@ def pascal_triangle(n):
     res = []
     if n <= 0:
         return(res)
+
+    res = [[1]]
+
+    for i in range(n - 1):
+        row_above = [0] + res[i] + [0]
+        row = []
+        for j in range(len(row_above) - 1):
+            row.append(row_above[j] + row_above[j + 1])
+        res.append(row)
+    return res
