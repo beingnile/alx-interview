@@ -23,4 +23,4 @@ def canUnlockAll(boxes):
         if box not in opened:
             return False
 
-    return True                
+    return True
