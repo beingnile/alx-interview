@@ -15,7 +15,8 @@ def validUTF8(data):
     """
     for val in data:
         try:
-            (val).to_bytes((val.bit_length() + 7) // 8, 'big').decode('utf-8')
+            val = (val).to_bytes((val.bit_length() + 7) // 8, 'big')
+            val.decode('utf-8')
         except UnicodeError:
             return False
     return True
